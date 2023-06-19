@@ -15,3 +15,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "OcrDemo"
 include ':app'
+
+include ':opencv'

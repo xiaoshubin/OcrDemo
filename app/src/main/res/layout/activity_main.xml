@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,7 +13,7 @@
         android:id="@+id/btn_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="选择图片"
+        android:text="变灰色"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,5 +27,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:src="@mipmap/ic_hehua"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:id="@+id/iv_show"
+        android:src="@mipmap/ic_hehua"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
