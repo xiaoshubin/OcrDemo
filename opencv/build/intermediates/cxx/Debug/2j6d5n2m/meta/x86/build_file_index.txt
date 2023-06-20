@@ -1,1 +1,0 @@
-D:\SmallCake\AndroidProject\OcrDemo\opencv\libcxx_helper\CMakeLists.txt

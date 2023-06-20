@@ -141,9 +141,11 @@ android {
 
     externalNativeBuild {
         cmake {
+            version "3.6.0"
             path (project.projectDir.toString() + '/libcxx_helper/CMakeLists.txt')
         }
     }
+    ndkVersion '21.4.7075529'
 }
 
 dependencies {

@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="21"
-6-->D:\SmallCake\AndroidProject\OcrDemo\opencv\java\AndroidManifest.xml
+6-->D:\Program Files\Android\AndroidProject\OcrDemo\opencv\java\AndroidManifest.xml
 7        android:targetSdkVersion="32" />
-7-->D:\SmallCake\AndroidProject\OcrDemo\opencv\java\AndroidManifest.xml
+7-->D:\Program Files\Android\AndroidProject\OcrDemo\opencv\java\AndroidManifest.xml
 8
 9</manifest>
