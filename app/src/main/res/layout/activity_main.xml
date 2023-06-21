@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
 <androidx.appcompat.widget.LinearLayoutCompat
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <Button
-        android:id="@+id/btn_select"
+        android:id="@+id/btn_load_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="变灰色"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/tv_select"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="选择图片"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
-        android:src="@mipmap/ic_hehua"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"/>
-    <ImageView
-        android:layout_marginTop="16dp"
-        android:id="@+id/iv_show"
-        android:src="@mipmap/ic_hehua"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"/>
+        android:text="解析图片中的文字"/>
+    <com.smallcake.demo.ocrdemo.AutoNewLineLayout
+        app:horizontalSpace="8dp"
+        app:vertivalSpace="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片优化二值化"/>
+        <Button
+            android:id="@+id/btn_threshold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二值化"/>
+        <Button
+            android:id="@+id/btn_to_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变灰色"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btn_canny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="canny边缘提取"/>
+    </com.smallcake.demo.ocrdemo.AutoNewLineLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_txt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="识别结果"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:src="@mipmap/ic_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_show"
+                android:src="@mipmap/ic_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
